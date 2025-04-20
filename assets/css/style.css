@@ -17,6 +17,12 @@ color:#3a3a3a;
 font-family:'Lato', sans-serif;
 }
 
+h1, h2, h3{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525 ;  
+}
 
 /* Header */
 header {
@@ -36,12 +42,6 @@ header a {
   color: inherit;
 }
 
-h1{
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525 ;  
-}
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -88,10 +88,26 @@ main {
 
 /* hero section */
 #hero{
-   height: 900px;
+   height: 600px;
    width: 100%;
    background-color: lightgreen;
    background: url(../images/hero-image.webp) no-repeat center center/cover;
+   position: relative;
+}
+/* cover text section */
+#cover-text{
+    /* final rgba value sets transparency */
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+#cover-text > h2, #cover-text > h3{
+    color: #ffffff;
 }
 /* Footer */
 #social-networks {
@@ -140,6 +156,11 @@ padding: 1rem;
 main {
      /* push main content dow to accomodate larger header */
     margin-top: 95px;
+}
+/* hero */
+#cover-text {
+width: 300px;
+right:50px;
 }
 }
 /* Media query: laptops and larger (992px and up) */
